@@ -15,8 +15,8 @@ LR = 5e-4               # learning rate
 UPDATE_EVERY = 4        # how often to update the network
 ```
 
-![Plot rewars](https://github.com/d-kleine/Udacity_DRLND/blob/main/Project1_Unity-CollectingBananas/plot_rewards.png)
-
 The agent successfully learns to receive episodic scores resulting in an average score of 13 (project's minimum score threshold) at episode 489. Compared to the untrained, randomly interacting agent this a good improvement!
+
+![Plot rewars](https://github.com/d-kleine/Udacity_DRLND/blob/main/Project1_Unity-CollectingBananas/plot_rewards.png)
 
 Probably a more complicated neural network would improve the model's performance. In order to gain better performance, other types of DQNs (e.g., Double DQN, Prioritized experience replay, Dueling DQN, Learning from multi-step bootstrap targets, Distributional DQN, Noisy DQN, etc.). The Rainbow algorithm could combine the advantages of these models resulting in a significantly better performance.
