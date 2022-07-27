@@ -54,7 +54,7 @@ Then, place the file in the `p1_navigation/` folder in the DRLND GitHub reposito
 
 (_For AWS_) If you'd like to train the agent on AWS, you must follow the instructions to [set up X Server](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md), and then download the environment for the **Linux** operating system above.
 
-## Dependencies
+### Dependencies
 
 To set up your python environment to run the code in this repository, follow the instructions below.
 
@@ -92,3 +92,11 @@ To set up your python environment to run the code in this repository, follow the
 6. Before running code in a notebook, change the kernel to match the `drlnd` environment by using the drop-down `Kernel` menu. 
 
 ![Kernel](https://user-images.githubusercontent.com/10624937/42386929-76f671f0-8106-11e8-9376-f17da2ae852e.png)
+
+### Instructions
+
+Firstly, please take a look into the markdown comments in the *Navigation.ipynb* file. In this file, the agent has been trained by a DQN algorithm, documented in *Report.md*. In order to watch the smart agent, you will need to load the trained weights. A checkpoint file has been trained for 624 episodes is provided. It can be loaded locally by calling:
+
+```python
+agent.qnetwork_local.load_state_dict(torch.load('checkpoint.pth')
+```
