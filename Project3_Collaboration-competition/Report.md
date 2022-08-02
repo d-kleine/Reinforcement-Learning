@@ -1,6 +1,4 @@
 ## MADDPG
-The position and velocity of the ball and racket define the state space of the environment, consisting of 8 variables. The racket's move and jumping are the possible actions. The task is episodic, and in order to solve the environment, the two competing agents must get an average score of +0.5 (over 100 consecutive episodes, after taking the maximum over both agents). Then the environment will be considered as solved.
-
 This project uses an off-policy method called *Multi Agent Deep Deterministic Policy Gradient* (MADDPG) which is based on the Deep Deterministic Policy Gradient (DDPG) algorithm. It uses *off-policy* data and the Bellman equation to learn the Q-function to infer a policy.
 
 ## Loss
