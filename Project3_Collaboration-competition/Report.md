@@ -1,5 +1,7 @@
 ## MADDPG
-The task is episodic, and in order to solve the environment, the two competing agents must get an average score of +0.5 (over 100 consecutive episodes). This project uses an off-policy method called *Multi Agent Deep Deterministic Policy Gradient* (MADDPG) which is based Deep Deterministic Policy Gradient (DDPG). It uses *off-policy* data and the Bellman equation to learn the Q-function to learn the policy.
+The position and velocity of the ball and racket define the state space of the enviroment, consisting of 8 variables. The racket's move and jumping are the possible actions. The task is episodic, and in order to solve the environment, the two competing agents must get an average score of +0.5 (over 100 consecutive episodes).
+
+This project uses an off-policy method called *Multi Agent Deep Deterministic Policy Gradient* (MADDPG) which is based Deep Deterministic Policy Gradient (DDPG). It uses *off-policy* data and the Bellman equation to learn the Q-function to learn the policy.
 
 ## Loss
 The critic loss is computed as the mean squared error (MSE)
