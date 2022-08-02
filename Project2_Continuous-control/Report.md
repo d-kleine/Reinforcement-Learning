@@ -32,7 +32,7 @@ sigma = 0.1
 ## Performance
 For this project, the single agent has been used. DDPG achieves the minimum mean score threshold of 30+ points reward over at least 100 episodes around episode 29 when trained.
 
-![Plot rewards](https://github.com/d-kleine/Udacity_DRLND/blob/main/Project2_Continuous-control/plot_rewards-mean.png)
+![Plot rewards](https://github.com/d-kleine/Udacity_DRLND/blob/main/Project2_Continuous-control/plot_rewards.png)
 
 ## Improvements
 In order to gain better overall performance, other types of Actor-Critic methods (e.g., GAE, Q-Prop) could be used. Also, recurrent versions of these algorithms could have a positive effect on the overall performance.
