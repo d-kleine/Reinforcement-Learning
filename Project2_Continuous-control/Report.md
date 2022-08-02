@@ -4,7 +4,7 @@ DDPG is an off-policy Actor-Critic method for learning actions in continuous spa
 The actor is implemented as a target network due to target networks decorrelating the process and generally improving performance. Soft updates are used in DDPG, which means that at every update step, the local networks are updated by a certain amount of the weights of the target networks according to a hyperparameter Tau $\tau$.
 
 ## Loss
-The critic loss is computed as the mean squared error of the targets of the current state (calculated by the target network) and the output of the local network. The actor is updated by backpropagating the error that is evaluated by calculating the average of the Q-values for each state-action pair as output.
+The critic loss is computed as the mean squared error (MSE) of the targets of the current state (calculated by the target network) and the output of the local network. The actor is updated by backpropagating the error that is evaluated by calculating the average of the Q-values for each state-action pair as output.
 
 ## Network architectures
 Both networks (Actor and Critic) are simple deep feedforward networks with 1 input- and 1 hidden layer activated by a ReLU function. Batch Normalization has been added to improve computation speed. The Actor uses a *Tangens hyperbolicus* (Tanh) function to output a continuous action in the range of [-1,1] for each of the 4 actions. The Critic outputs a Q-value.
