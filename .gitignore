@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# individual files
+*.zip
+*.pdf
+Banana_Windows_x86_64/
+Reacher_Windows_x86_64/
+Tennis_Windows_x86_64/
