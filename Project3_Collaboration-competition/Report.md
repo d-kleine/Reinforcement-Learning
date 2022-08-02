@@ -30,7 +30,7 @@ sigma = 0.1
 ## Performance
 The MADDPG algorithm achieves the minimum mean score threshold of 0.5 points reward over at least 100 episodes around episode 29 when trained.
 
-![Plot rewards]()
+![Plot rewards](https://github.com/d-kleine/Udacity_DRLND/blob/main/Project3_Collaboration-competition/plot_rewards-mean.png)
 
 ## Improvements
 * Improving network architecture, including normalization and dropout
