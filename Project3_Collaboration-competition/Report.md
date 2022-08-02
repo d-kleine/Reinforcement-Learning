@@ -4,10 +4,10 @@ The position and velocity of the ball and racket define the state space of the e
 This project uses an off-policy method called *Multi Agent Deep Deterministic Policy Gradient* (MADDPG) which is based Deep Deterministic Policy Gradient (DDPG). It uses *off-policy* data and the Bellman equation to learn the Q-function to learn the policy.
 
 ## Loss
-The critic loss is computed as the mean squared error (MSE)
+The critic loss is computed as the mean squared error (MSE).
 
 ## Network architectures
-Both Actor and Critic contain 3 hidden layers with 2 ReLU activation functions. At the end of Actor, there is an extra tanh activation function to guarantee that the range of actions is (-1, 1).
+Both Actor and Critic contain 1 hidden layer with 2 ReLU activation functions. At the end of Actor, there is an extra tanh activation function to guarantee that the range of actions is (-1, 1).
 
 ## Hyperparameters
 
