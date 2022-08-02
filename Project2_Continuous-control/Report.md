@@ -35,4 +35,5 @@ For this project, the single agent has been used. DDPG achieves the minimum mean
 ![Plot rewards](https://github.com/d-kleine/Udacity_DRLND/blob/main/Project2_Continuous-control/plot_rewards.png)
 
 ## Improvements
-In order to gain better overall performance, other types of Actor-Critic methods (e.g., GAE, Q-Prop) could be used. Also, recurrent versions of these algorithms could have a positive effect on the overall performance.
+* Tune the hyperparameters and optimize the NN
+* In order to gain better overall performance, other types of Actor-Critic methods (e.g., GAE, Q-Prop, PPO) could be used. Also, recurrent versions of these algorithms could have a positive effect on the overall performance.
