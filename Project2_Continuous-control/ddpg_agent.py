@@ -51,7 +51,7 @@ class Agent():
         # Replay memory
         self.memory = ReplayBuffer(action_size, BUFFER_SIZE, BATCH_SIZE, random_seed)
         
-        #### IDEA
+        # Setting step count to zero
         self.step_count = 0 
         
     
@@ -59,14 +59,6 @@ class Agent():
         """Save experience in replay memory, and use random sample from buffer to learn."""
         # Save experience / reward
         self.memory.add(state, action, reward, next_state, done)
-        
-        #### IDEA
-        #self.step_count += 1
-        #if self.step_count % 10 == 0:
-        #    for i in range (5): 
-        #        if len(self.memory) > BATCH_SIZE :
-        #        experiences = self.memory.sample()
-        #        self.learn(experiences, GAMMA)
 
         # Learn, if enough samples are available in memory
         if len(self.memory) > BATCH_SIZE :
