@@ -1,13 +1,13 @@
 ## MADDPG
 The position and velocity of the ball and racket define the state space of the environment, consisting of 8 variables. The racket's move and jumping are the possible actions. The task is episodic, and in order to solve the environment, the two competing agents must get an average score of +0.5 (over 100 consecutive episodes, after taking the maximum over both agents). Then the environment will be considered as solved.
 
-This project uses an off-policy method called *Multi Agent Deep Deterministic Policy Gradient* (MADDPG) which is based Deep Deterministic Policy Gradient (DDPG). It uses *off-policy* data and the Bellman equation to learn the Q-function to learn the policy.
+This project uses an off-policy method called *Multi Agent Deep Deterministic Policy Gradient* (MADDPG) which is based on the Deep Deterministic Policy Gradient (DDPG) algorithm. It uses *off-policy* data and the Bellman equation to learn the Q-function to infer a policy.
 
 ## Loss
 The critic loss is computed as the mean squared error (MSE).
 
 ## Network architectures
-Both Actor and Critic contain 1 hidden layer with 2 ReLU activation functions. At the end of Actor, there is an extra tanh activation function to guarantee that the range of actions is (-1, 1).
+Both Actor and Critic contain a simple deep neural network with ReLU activation functions. At the end of Actor, there is an extra tanh activation function to guarantee that the range of actions is (-1, 1).
 
 ## Hyperparameters
 
@@ -38,5 +38,5 @@ The MADDPG algorithm achieves the minimum mean score threshold of 0.5 points rew
 * Improving network architecture, including normalization and dropout
 * Finetuning hyperparameters
 * Using the symmetry of the environment that two agents can share experiences 
-* other types of Actor-Critic algorithms (e.g. PPO, A3C, and D4PG) that use multiple (non-interacting, parallel) copies of the same agent to distribute the task of gathering experience.
-* more advanced DDPG algorithms (e.g. Twin Delayed DDPG)
+* Other types of Actor-Critic algorithms (e.g. PPO, A3C, and D4PG) that use multiple (non-interacting, parallel) copies of the same agent to distribute the task of gathering experience.
+* More advanced DDPG techniques (e.g. Twin Delayed DDPG, DDPG with Prioritized Experience Replay)
