@@ -14,18 +14,21 @@ This repository contains material related to Udacity's [Deep Reinforcement Learn
 **Fundamentals of reinforcement learning that can be applied to implementations of many classic solution methods and modern approaches to applications such as video games and robotics**
 
 *Project 1: Navigation*
+
 Applying deep learning architectures to reinforcement learning tasks: 
 * Training an agent navigating through a virtual world based on sensor data 
 * Value-based methods: Deep Q-Network (DQN), Double-DQN, Dueling-DQN and Prioritized Replay
 
 *Project 2: Continuous Control*
+
 Evolutionary algorithms and policy gradient methods and design of own DRL algorithm:
 * Training a simulated robotic arm to reach target locations
 * Policy-based methods: Generalized Advantage Estimation (GAE) to reduce the variance of policy gradient methods, policy optimization methods such as REINFORCE, Trust Region Policy Optimization (TRPO) and Proximal Policy Optimization (PPO) 
 * Actor-Critic procedure: Advantage Actor-Critic (A2C), Asynchronous Advantage Actor-Critic (A3C), Deep Deterministic Policy Gradients (DDPG)
 
 *Project 3: Collaboration and Competition*
-* Collaboration respectively cooperation on a complex task
+
+Collaboration respectively cooperation on a complex task:
 * Training of a system of several interacting agents 
 * Multi-Agent Deep Deterministic Policy Gradient (MADDPG)
 
