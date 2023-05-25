@@ -19,6 +19,8 @@ Applying deep learning architectures to reinforcement learning tasks:
 * Training an agent navigating through a virtual world based on sensor data 
 * Value-based methods: Deep Q-Network (DQN), Double-DQN, Dueling-DQN and Prioritized Replay
 
+[Project](https://github.com/d-kleine/Reinforcement-Learning/tree/main/Project1_Navigation)
+
 *Project 2: Continuous Control*
 
 Evolutionary algorithms and policy gradient methods and design of own DRL algorithm:
@@ -26,11 +28,15 @@ Evolutionary algorithms and policy gradient methods and design of own DRL algori
 * Policy-based methods: Generalized Advantage Estimation (GAE) to reduce the variance of policy gradient methods, policy optimization methods such as REINFORCE, Trust Region Policy Optimization (TRPO) and Proximal Policy Optimization (PPO) 
 * Actor-Critic procedure: Advantage Actor-Critic (A2C), Asynchronous Advantage Actor-Critic (A3C), Deep Deterministic Policy Gradients (DDPG)
 
+[Project](https://github.com/d-kleine/Reinforcement-Learning/tree/main/Project2_Continuous-control)
+
 *Project 3: Collaboration and Competition*
 
 Collaboration respectively cooperation on a complex task:
 * Training of a system of several interacting agents 
 * Multi-Agent Deep Deterministic Policy Gradient (MADDPG)
+
+[Project](https://github.com/d-kleine/Reinforcement-Learning/tree/main/Project3_Collaboration-competition)
 
 ### Tutorials
 
